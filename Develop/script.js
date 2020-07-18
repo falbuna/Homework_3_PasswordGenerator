@@ -1,17 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-function generatePassword(){
-
-  var lowcletters = ('abcdefghijklmnopqrstuvwxyz');
-  var length = 4;
-  var randomlet = '';
-    for (i=0; i < length; i++){
-      var rletter = Math.floor(Math.random() * lowcletters.length);
-      randomlet += lowcletters.substring(rletter, rletter+1);
-    }
-    return randomlet;
-}
 
 // Write password to the #password input
 function writePassword() { 
@@ -24,3 +13,22 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+// Generates Password
+
+function generatePassword(){
+  // After you press the button, you are asked how long you want the passord.
+  passlength = prompt('How long do you want your password?')
+  // Password must be between 8 and 128 characters
+  while (passlength < 8 || passlength > 128){
+    alert('Please choose a password between 8 - 128 characters!')
+    passlength = prompt('How long do you want your password?')
+  }
+  var lowcletters = ('abcdefghijklmnopqrstuvwxyz');
+  var randomlet = '';
+    for (i=0; i < passlength; i++){
+      var rletter = Math.floor(Math.random() * lowcletters.length);
+      randomlet += lowcletters.substring(rletter, rletter+1);
+    }
+    return randomlet;
+}
