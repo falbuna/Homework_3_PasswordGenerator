@@ -38,6 +38,8 @@ function generatePassword() {
   const uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
   // This array holds all the numeric characters.
   const numeric = '0123456789'.split('');
+  // This array holds all the special characters.
+  const special = '\xa0!\"#$%&\'\(\)*+\,.-/;:\<\=\>\\?@\]\[^_`\}\{|~'.split('');
 
   // This is a placeholder for the array that will contain all the arrays that are confirmed with the prompts.
   var combinedarray = [];
@@ -45,23 +47,32 @@ function generatePassword() {
   // This prompt will ask if they want to use lower case letters.
   var lc = confirm('Do you want to use lower case letters?');
       if (lc == true){
+        // If the statement is true, add the lowercase array. If false, do not add the lowercase array.
         combinedarray = combinedarray.concat(lowercase);
       }
   // This prompt will ask if they want to use upper case letters.
   var uc = confirm('Do you want to use upper case letters?');
       if (uc == true){
+        // If the statement is true, add the uppercase array. If false, do not add the uppercase array.
         combinedarray = combinedarray.concat(uppercase);
       }
   // This prompt will ask if they want to use numerical values.
   var nm = confirm('Do you want to use numbers?');
             if (nm == true){
+        // If the statement is true, add the numerical characters array. If false, do not add the numerical characters array.
         combinedarray = combinedarray.concat(numeric);
       }
+  // This prompt will ask if they want to use special characters.
+  var sp = confirm('Do you want to use special characters?');
+            if (sp == true){
+        // If the statement is true, ad the special characters array. If false, do not add the special characters array.
+        combinedarray = combinedarray.concat(special);
+            }
       
-    // This will turn the combined array placeholder into a string with all the characters that the user allowed through the previous prompts.
+    // This will turn the combined array placeholder into a string with all the characters that the user desired through the previous prompts.
     var password = combinedarray.join('');
 
-    // This will generate the random password with the length and the characters allowed through the prompts.
+    // This will generate the random password with the length and the characters allowed through the previous prompts.
     var randompassword = '';
     for (i=0; i < passlength; i++){
       var rletter = Math.floor(Math.random() * password.length);
