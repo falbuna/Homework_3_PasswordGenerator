@@ -44,14 +44,14 @@ function generatePassword() {
   // This is a placeholder for the array that will contain all the arrays that are confirmed with the prompts.
   var combinedarray = [];
 
-  // This prompt will ask if they want to use lower case letters.
-  var lc = confirm('Do you want to use lower case letters?');
+  // This prompt will ask if they want to use lowercase letters.
+  var lc = confirm('Do you want to use lowercase letters?');
       if (lc == true){
         // If the statement is true, add the lowercase array. If false, do not add the lowercase array.
         combinedarray = combinedarray.concat(lowercase);
       }
-  // This prompt will ask if they want to use upper case letters.
-  var uc = confirm('Do you want to use upper case letters?');
+  // This prompt will ask if they want to use uppercase letters.
+  var uc = confirm('Do you want to use uppercase letters?');
       if (uc == true){
         // If the statement is true, add the uppercase array. If false, do not add the uppercase array.
         combinedarray = combinedarray.concat(uppercase);
