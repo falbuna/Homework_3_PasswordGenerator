@@ -12,11 +12,16 @@ My motivation for doing taking on this project was to test my knowledge and skil
 
 When the user first enters the webpage, this is what they will see.
 
-![Password Generator](./assets/Password_Generator)
+![Main Password Generator Page](https://github.com/falbuna/Homework_3_PasswordGenerator/blob/master/Assets/Password_Generator.PNG)
 
 When the user presses the "Generate Password" button, they will see a prompt that will ask for the length of the password.
 
-![Password Length Prompt](./assets/Password_Length)
+![Password Length Prompt](https://github.com/falbuna/Homework_3_PasswordGenerator/blob/master/Assets/Password_Length.PNG)
+
+When the user enters a length that is not between 8 - 128 characters, they will get this alert.
+
+![Password Length Alert](hhttps://github.com/falbuna/Homework_3_PasswordGenerator/blob/master/Assets/Password_LengthError.PNG)
+
 
 
 
