@@ -1,2 +1,13 @@
-# Homework_3_PasswordGenterator
-Homework 3 JavaScript: Password Generator
+# Homework 3 Password Generator
+Homework for Week 3
+
+## Introduction
+A company that holds very sensitive and valuable information reached out to me as a junior developer to develop a webpage that will randomly generate a password to the page when the "Generate Password" is clicked. The Password Generator will ask a series of prompts that will validate each answer and generates a password that matches the selected criteria.
+
+My motivation for doing taking on this project was to test my knowledge and skills on Javascript arrays and functions. This assigment really tested my understanding on arrays, variables, and functions. The aesthetics and general layout of the webpage was already created, and so it was my job to ensure that the password is created based on the series of prompts that the user answers.
+
+## How I Coded the Webpage
+
+As I previously stated, the aesthetics and general layout of the webpage was created. Luckily, this meant that I could dedicate my time and effort to the Javascript code and ensure proper functionality. I initially started this assignment by looking at the pre-coded Javascript file and figuring out what the button "Generate Password" did. By using the Chrome inspector tool in the console, I found that the generatePassword() function was needed to start the function for generating the password. I first started out, by creating a variable that held all the possible string combinations for the lowercase letters. I then used a for loop function that will output a random string of lowercase letters using the random Math floor function. I started out with 8 characters length, to get my code to start working. Getting the code to generate the random letters turned out to be the hardest part of the assignment. After a lot of trial and error, I was able to get the function to work using lowercase letters and a fixed length of 8 characters. Once I got the code to work with all lowercase letters and a set fixed length, I had the code ask the first prompt that requested the length of the password. The prompt asked for the length of the password which became  the variable called passlength, that was inserted in the random Math floor function to output the desired length. I also gave conditions that if the password was too short ( less than 8 characters) or too long (greater than 128 characters) that a new length needs to be given. I also added a break in the loop that if the user canceled, they will not be stuck in a loop that will continually ask them for a value for the length. Once I got the code to work with a prompt for length, I then added addtional prompts that allowed the user to choose uppercase or numeric values. 
+
+## Usage

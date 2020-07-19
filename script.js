@@ -17,14 +17,14 @@ generateBtn.addEventListener("click", writePassword);
 // Generates Password
 function generatePassword() {
   // After they press the "Generate Password" button, they will be asked how long they want the password.
-  passlength = prompt('How long do you want your password (Choose between 8 - 128 characters)?');
+  passlength = prompt('How long do you want your password? (Please enter a password length between 8 - 128 characters)');
   // If they cancel, breaks the loop.
   if (passlength === "null" || passlength === null || passlength == "") {
     return;
   }
   // This will alert the user that the password must be between 8 and 128 characters.
   while (passlength < 8 || passlength > 128){
-    alert('Please choose a password between 8 - 128 characters!')
+    alert('Please enter a password length between 8 - 128 characters!')
     passlength = prompt('How long do you want your password?');
     // If they cancel, breaks the loop.
     if (passlength === "null" || passlength === null || passlength == "") {
