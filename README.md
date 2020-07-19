@@ -1,10 +1,24 @@
 # Homework 3 Password Generator
+
 Homework for Week 3
 
 ## Introduction
+
 A company that holds very sensitive and valuable information reached out to me as a junior developer to develop a webpage that will randomly generate a password to the page when the "Generate Password" is clicked. The Password Generator will ask a series of prompts that will validate each answer and generates a password that matches the selected criteria.
 
 My motivation for doing taking on this project was to test my knowledge and skills on Javascript arrays and functions. This assigment really tested my understanding on arrays, variables, and functions. The aesthetics and general layout of the webpage was already created, and so it was my job to ensure that the password is created based on the series of prompts that the user answers.
+
+## Usage
+
+When the user first enters the webpage, this is what they will see.
+
+![Password Generator](./assets/Password_Generator)
+
+When the user presses the "Generate Password" button, they will see a prompt that will ask for the length of the password.
+
+![Password Length Prompt](./assets/Password_Length)
+
+
 
 ## How I Coded the Webpage
 
