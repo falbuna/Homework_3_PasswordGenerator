@@ -12,18 +12,37 @@ My motivation for doing taking on this project was to test my knowledge and skil
 
 When the user first enters the webpage, this is what they will see.
 
-![Main Password Generator Page](https://github.com/falbuna/Homework_3_PasswordGenerator/blob/master/Assets/Password_Generator.PNG)
+![Main Password Generator Page with the Generate Password button.](https://github.com/falbuna/Homework_3_PasswordGenerator/blob/master/Assets/Password_Generator.PNG)
 
-When the user presses the "Generate Password" button, they will see a prompt that will ask for the length of the password.
+When the user presses the "Generate Password" button, they will see a prompt that will ask for the length of the password. The user can also press cancel to end.
 
-![Password Length Prompt](https://github.com/falbuna/Homework_3_PasswordGenerator/blob/master/Assets/Password_Length.PNG)
+![Prompt for Password Length.](https://github.com/falbuna/Homework_3_PasswordGenerator/blob/master/Assets/Password_Length.PNG)
 
-When the user enters a length that is not between 8 - 128 characters, they will get this alert.
+When the user enters a length that is not between 8 - 128 characters, they will get this alert. The user can press cancel to end the process.
 
-![Password Length Alert](hhttps://github.com/falbuna/Homework_3_PasswordGenerator/blob/master/Assets/Password_LengthError.PNG)
+![Alert if the Password Length is not between 8 - 128 characters.](https://github.com/falbuna/Homework_3_PasswordGenerator/blob/master/Assets/Password_LengthError.PNG)
 
+The user will be asked whether they want to use lowercase letters. If they do want lowercase letters in the generated password, they would press "OK". Otherwise, they would press cancel. Pressing cancel from this point forward will not end the process.
 
+![Prompt for lowercase letters.](https://github.com/falbuna/Homework_3_PasswordGenerator/blob/master/Assets/Lowercase.PNG)
 
+The user will be asked whether they want to use uppercase letters. If they do want uppercase letters in the generated password, they would press "OK". Otherwise, they would press cancel. Pressing cancel from this point forward will not end the process.
+
+![Prompt for uppercase letters.](https://github.com/falbuna/Homework_3_PasswordGenerator/blob/master/Assets/Uppercase.PNG)
+
+The user will be asked whether they want to use numbers. If they do want numbers in the generated password, they would press "Ok". Otherwise, they would press cancel. Pressing cancel from this point forward will not end the process.
+
+![Prompt for numeric characters.](https://github.com/falbuna/Homework_3_PasswordGenerator/blob/master/Assets/Numbers.PNG)
+
+The user will finally be asked whether they want to use special characters. If they do want to use special characters in the generated password, they would press "Ok". Otherwise, they would press cancel. Pressing cancel will not end the process.
+
+![Prompt for special characters.](https://github.com/falbuna/Homework_3_PasswordGenerator/blob/master/Assets/Special.PNG)
+
+After the last prompt, the password will generate randomly according to how the user answered the prompts.
+
+![Randomly Generated Password.](https://github.com/falbuna/Homework_3_PasswordGenerator/blob/master/Assets/Generated_Password.PNG)
+
+If the user is not satisifed with the generated password, they can request a new password by pressing the "Generate Password" button. However, the generated password will be lost and they will have to go through each of the prompts to get a new password.
 
 ## How I Coded the Webpage
 
