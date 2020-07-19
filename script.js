@@ -15,19 +15,18 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 // Generates Password
-
 function generatePassword() {
-  // After you press the button, you are asked how long you want the passord.
-  passlength = prompt('How long do you want your password?');
-  // If you cancel, breaks the loop
+  // After they press the "Generate Password" button, they will be asked how long they want the password.
+  passlength = prompt('How long do you want your password (Choose between 8 - 128 characters)?');
+  // If they cancel, breaks the loop.
   if (passlength === "null" || passlength === null || passlength == "") {
     return;
   }
-  // Password must be between 8 and 128 characters
+  // This will alert the user that the password must be between 8 and 128 characters.
   while (passlength < 8 || passlength > 128){
     alert('Please choose a password between 8 - 128 characters!')
     passlength = prompt('How long do you want your password?');
-    // If they cancel, breaks the loop
+    // If they cancel, breaks the loop.
     if (passlength === "null" || passlength === null || passlength == "") {
       return;
     }
@@ -40,29 +39,29 @@ function generatePassword() {
   // This array holds all the numeric characters.
   const numeric = '0123456789'.split('');
 
-  // This is a placeholder for the array that will contain all the arrays that are requested.
+  // This is a placeholder for the array that will contain all the arrays that are confirmed with the prompts.
   var combinedarray = [];
 
-  // This prompt will ask if you want to use lower case letters.
+  // This prompt will ask if they want to use lower case letters.
   var lc = confirm('Do you want to use lower case letters?');
       if (lc == true){
         combinedarray = combinedarray.concat(lowercase);
       }
-  // This prompt will ask if you want to use upper case letters.
+  // This prompt will ask if they want to use upper case letters.
   var uc = confirm('Do you want to use upper case letters?');
       if (uc == true){
         combinedarray = combinedarray.concat(uppercase);
       }
-  // This prompt will ask if you want to use numerical characters.
+  // This prompt will ask if they want to use numerical values.
   var nm = confirm('Do you want to use numbers?');
             if (nm == true){
         combinedarray = combinedarray.concat(numeric);
       }
       
-    // This will turn the comined array into a string with all the characters that were allowed through the previous prompts.
+    // This will turn the combined array placeholder into a string with all the characters that the user allowed through the previous prompts.
     var password = combinedarray.join('');
 
-    // This will generate the random password with the length and the characters selected.
+    // This will generate the random password with the length and the characters allowed through the prompts.
     var randompassword = '';
     for (i=0; i < passlength; i++){
       var rletter = Math.floor(Math.random() * password.length);
