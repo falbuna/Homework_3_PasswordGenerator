@@ -78,5 +78,6 @@ function generatePassword() {
       var rletter = Math.floor(Math.random() * password.length);
       randompassword+= password.substring(rletter, rletter+1);
     }
+    // Returns the variable randompassword to the generatePassword function.
     return randompassword;
 }

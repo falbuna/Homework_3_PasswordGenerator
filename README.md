@@ -6,7 +6,7 @@ Homework for Week 3
 
 A company that holds very sensitive and valuable information reached out to me as a junior developer to develop a webpage that would randomly generate a password when a button is clicked. The Password Generator will ask a series of prompts that will validate each answer and outputs a randomly generated password that matches the requested criteria.
 
-My motivation for doing taking on this project was to test my knowledge and skills on Javascript arrays and functions. This assigment really tested my understanding on arrays, variables, and functions. The aesthetics and general layout of the webpage was already created, and so it was my job to ensure that the password is created based on the series of prompts that the user answers.
+My motivation for taking on this project was to test my knowledge and skills on Javascript arrays and functions. This assigment really tested my understanding on arrays, variables, and functions. The aesthetics and general layout of the webpage was already created, and so it was my job to ensure that the password is created based on the series of prompts that the user answers.
 
 ## Usage
 
@@ -14,15 +14,17 @@ When the user first enters the webpage, this is what they will see.
 
 ![Main Password Generator Page with the Generate Password button.](https://github.com/falbuna/Homework_3_PasswordGenerator/blob/master/Assets/Password_Generator.PNG)
 
-When the user presses the "Generate Password" button, they will see a prompt that will ask for the length of the password. The user can also press cancel to end.
+When the user presses the "Generate Password" button, they will get a prompt that will ask for the length of the password. The user can also press cancel to end.
 
 ![Prompt for Password Length.](https://github.com/falbuna/Homework_3_PasswordGenerator/blob/master/Assets/Password_Length.PNG)
 
-When the user enters a length that is not between 8 - 128 characters, they will get this alert. Pressing "OK" will ask the user to re-enter a length for the password. The user can also press cancel to end.
+When the user enters a length that is not between 8 - 128 characters, they will get this alert. 
 
 ![Alert if the Password Length is not between 8 - 128 characters.](https://github.com/falbuna/Homework_3_PasswordGenerator/blob/master/Assets/Password_LengthError.PNG)
 
-The user will be asked whether they want to use lowercase letters. If they do want lowercase letters in the generated password, they can press "OK". Otherwise, they would press cancel. Pressing cancel from this point forward will not end the process.
+Pressing "OK" will ask the user to re-enter a length for the password. The user can also press cancel to end.
+
+The user will then be asked whether they want to use lowercase letters. If they do want lowercase letters in the generated password, they can press "OK". Otherwise, they would press cancel. Pressing cancel from this point forward will not end the process.
 
 ![Prompt for lowercase letters.](https://github.com/falbuna/Homework_3_PasswordGenerator/blob/master/Assets/Lowercase.PNG)
 
