@@ -32,11 +32,11 @@ The user will be asked whether they want to use uppercase letters. If they do wa
 
 ![Prompt for uppercase letters.](https://github.com/falbuna/Homework_3_PasswordGenerator/blob/master/Assets/Uppercase.PNG)
 
-The user will be asked whether they want to use numbers. If they do want numbers in the generated password, they can press "Ok". Otherwise, they would press cancel. Pressing cancel from this point forward will not end the process.
+The user will be asked whether they want to use numbers. If they do want numbers in the generated password, they can press "OK". Otherwise, they would press cancel. Pressing cancel from this point forward will not end the process.
 
 ![Prompt for numeric characters.](https://github.com/falbuna/Homework_3_PasswordGenerator/blob/master/Assets/Numbers.PNG)
 
-The user will finally be asked whether they want to use special characters. If they do want to use special characters in the generated password, they can press "Ok". Otherwise, they would press cancel. Pressing cancel will not end the process.
+The user will finally be asked whether they want to use special characters. If they do want to use special characters in the generated password, they can press "OK". Otherwise, they would press cancel. Pressing cancel will not end the process.
 
 ![Prompt for special characters.](https://github.com/falbuna/Homework_3_PasswordGenerator/blob/master/Assets/Special.PNG)
 
