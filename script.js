@@ -32,13 +32,13 @@ function generatePassword() {
     }
   }
 
-  // This array holds all the lower case letters.
+  // This will split the string of lowercase letters into an array of substrings.
   const lowercase = 'abcdefghijklmnopqrstuvwxyz'.split('');
-  // This array holds all the upper case letters.
+  // This will split the string of uppercase letters into an array of substrings.
   const uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
-  // This array holds all the numeric characters.
+  // This will split the string of numbers into an array of substrings.
   const numeric = '0123456789'.split('');
-  // This array holds all the special characters.
+  // This will spint the string of special characters into an array of substrings.
   const special = '\xa0!\"#$%&\'\(\)*+\,.-/;:\<\=\>\\?@\]\[^_`\}\{|~'.split('');
 
   // This is a placeholder for the array that will contain all the arrays that are confirmed with the prompts.
