@@ -74,7 +74,7 @@ function generatePassword() {
         combinedarray = combinedarray.concat(special);
             }
       
-    // This will convert the elements of the combined array placeholder into a string.
+    // This will convert the elements of the combined array into a new array.
     var password = combinedarray.join('');
 
     // This will generate the random password with the length and the characters allowed through the previous prompts.
