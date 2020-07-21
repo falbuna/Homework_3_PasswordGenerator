@@ -16,8 +16,10 @@ generateBtn.addEventListener("click", writePassword);
 
 // Generates Password
 function generatePassword() {
-  // After they press the "Generate Password" button, they will be asked how long they want the password.
-  passlength = prompt('How long do you want your password? (Please enter a password length between 8 - 128 characters)');
+  // After they press the "Generate Password" button, they will be asked how long they want the password, with a default value of 8 characters.
+  var passlength = prompt('How long do you want your password? (Please enter a password length between 8 - 128 characters)');
+  var length = parseInt(passlength)
+
   // If they cancel, breaks the loop.
   if (passlength === "null" || passlength === null || passlength == "") {
     return;
@@ -25,7 +27,10 @@ function generatePassword() {
   // This will alert the user that the password must be between 8 and 128 characters.
   while (passlength < 8 || passlength > 128){
     alert('Please enter a password length between 8 - 128 characters!')
-    passlength = prompt('How long do you want your password?');
+    // Added a default value of 8 after the alert in the new prompt to help the user.
+    passlength = prompt('How long do you want your password?', '8');
+    var length = parseInt(passlength)
+
     // If they cancel, breaks the loop.
     if (passlength === "null" || passlength === null || passlength == "") {
       return;
@@ -74,7 +79,7 @@ function generatePassword() {
 
     // This will generate the random password with the length and the characters allowed through the previous prompts.
     var randompassword = '';
-    for (i=0; i < passlength; i++){
+    for (i=0; i < length; i++){
       var rletter = Math.floor(Math.random() * password.length);
       randompassword+= password.substring(rletter, rletter+1);
     }
